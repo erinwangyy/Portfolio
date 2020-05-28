@@ -638,7 +638,9 @@ a{
     align-self: end;
 }
 
-
+.swipe{
+    display:none;
+}
 
 @media screen and (max-width: 400px ){
     .preview0{
@@ -646,16 +648,23 @@ a{
         display: none;
         } 
     body{
-        
-        overflow:scroll;
+        height:100vh;
+        width:98vw;
+        overflow:hidden;
     }
     /* .header
     {background-color: grey;
     width:100vw;
     height:20vh;
 } */
+.swipe{
+    display:block;
+    color:white;
+    font-size: 0.5em;
+    text-align: center;
+}
     .preview{
-        top:6em;
+        top:10em;
         /* height:200vh; */
         left:-3em;
         overflow: scroll;
@@ -665,7 +674,7 @@ a{
        border:0px;
     }
     .grid{
-       top:6.5em;
+       top:7.5em;
        /* transform: scale(1.5); */
 /*   
     grid-template-rows:repeat(1000,6.25vw); */
@@ -676,7 +685,7 @@ a{
         background-color: lightgray;
         width: 110vw;
        left:-0.05em;
-      padding-bottom: 0.2em;
+      /* padding-bottom: -0.1em; */
     }
     .right{
         display: none;
@@ -699,6 +708,7 @@ a{
         /* top:0.5em; */
         /* left:2em; */
         border:none;
+        display: none;
     }
     
     #title2{
@@ -710,10 +720,10 @@ a{
         display: none;
     }
     #title3{
-        position: relative;
+        /* position: relative;
         font-size: 0.1em;
-        top:520em;
-      
+        top:520em; */
+        display: none;
         border:none;
     }
 
@@ -729,10 +739,13 @@ a{
      /* display:none; */
      
      position: relative;
-        top: 52em;
-        height:80vh;
+        top: 50em;
+        /* overflow: visible; */
+        height:60vh;
+        padding-bottom: 18em;
 
     }
+
     .preview>.box{
         border:none;}
     .grid>.box{
