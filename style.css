@@ -682,7 +682,7 @@ margin-left: -20em;
         grid-row: 1/11;
        /* grid-template-rows:repeat(100, 6.25vw); */
        /* transform: scale(1.5); */
-       background-color: black;
+       background-color: lightgray;
        border:0px;
     }
     .grid{
