@@ -696,7 +696,7 @@ margin-left: -20em;
     border:0px;
     }
     .top{
-        background-color: pink;
+        background-color: lightgrey;
         width: 110vw;
        left:-0.05em;
        line-height: 1.8em;
@@ -755,7 +755,7 @@ margin-left: -20em;
      /* display:none; */
    
      position: relative;
-        top: 80em;
+        top: 90em;
         /* overflow: visible; */
         height:100vh;
         padding-bottom: 7em;
@@ -764,7 +764,7 @@ background-color: lightgrey;
 
 .img3{
     width:100vw;
-height:100vh;
+/* height:100vh; */
 }
     .preview>.box{
         border:none;}
