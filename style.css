@@ -757,13 +757,14 @@ margin-left: -20em;
      position: relative;
         top: 90em;
         /* overflow: visible; */
-        height:100vh;
+        height:112vw;
         padding-bottom: 7em;
 background-color: lightgrey;
     }
 
 .img3{
-    width:100vw;
+    width:80vw;
+    height:112vw;
 /* height:100vh; */
 }
     .preview>.box{
