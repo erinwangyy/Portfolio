@@ -758,7 +758,7 @@ margin-left: -20em;
         top: 90em;
         /* overflow: visible; */
         height:112vw;
-        padding-bottom: 7em;
+        /* padding-bottom: 7em; */
 background-color: lightgrey;
 overflow-y: hidden;
     }
