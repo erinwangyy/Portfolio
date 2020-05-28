@@ -760,6 +760,7 @@ margin-left: -20em;
         height:112vw;
         padding-bottom: 7em;
 background-color: lightgrey;
+overflow-y: hidden;
     }
 
 .img3{
