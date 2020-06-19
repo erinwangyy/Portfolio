@@ -11,38 +11,40 @@ body{
     /* background-size:600px;
     background-repeat:repeat;   
     background-image:url("asset/picture/heart\ bw.jpg"); */
-    background-color: lightgrey;
+    background-color:rgb(240, 240, 240);
     overflow: hidden;
 }
 .header{
 height:10vh;
+margin-top: 0.5vw;
+
 }
 
 
 .preview0{
     position: relative;
     right: -0.2em;
-     
+     z-index: 100;
        overflow:scroll;
        display:grid;
        height:98vh;
        grid-template-columns: repeat(3,1fr);
        grid-template-rows: repeat(24,6.25vw);
-       box-shadow: 5px 5px 5px grey ;
+       box-shadow: 5px 5px 5px black ;
        /* background-color: white; */
        /* border-left:0.5px rgb(189, 189, 189) dashed; */
 }
 .preview{
  position: relative;
  right: -0.2em;
-
+z-index: 50;
     overflow:scroll;
     display:grid;
     height:98vh;
     grid-template-columns: repeat(7,1fr);
     grid-template-rows: repeat(32,6.25vw);
     /* background-color: white; */
-    border-left:0.5px rgb(189, 189, 189) dashed;
+    /* border-left:0.5px rgb(189, 189, 189) dashed; */
 }
 
 
@@ -64,25 +66,12 @@ height:10vh;
 
 
 
- .left{
-    height:100vh;
-background-color: lightgray;
-margin-right: 2em;
-/* grid-column: 1/2; */
-}  
-.right{
-position: relative;
-    height:100vh;
-    left: -0.5em;
-background-color:lightgray;
-z-index: 9000;
 
-}
 .box{
 position: relative;
 
-border-right:0.5px rgb(189, 189, 189) dashed;
-border-bottom:0.5px rgb(189, 189, 189) dashed;
+border-right:0.5px rgb(240, 240, 240) dashed;
+border-bottom:0.5px rgb(240, 240, 240) dashed;
 text-align: center;
 overflow: hidden;
 font-size: 0.5rem;
@@ -115,14 +104,14 @@ border:none;
 }
 
 .top{
-left:1em;
- grid-area: 1/1/3/3;
-width:9.4vw;
-padding-top:-0.1em;
+
   position:fixed;
-  background-color:none;
+  background-color:rgb(240, 240, 240);
 display:grid;
 z-index: 2000;
+
+text-align: end;
+
 
 
 /* grid-template-columns:repeat(3,1fr)  */
@@ -136,25 +125,42 @@ background-image: linear-gradient(rgb(231, 231, 231), lightgrey); */
 
     /* border-right:1px rgb(189, 189, 189) dashed;
     border-bottom:1px rgb(189, 189, 189) dashed; */
-font-family:Arial, Helvetica, sans-serif;
+font-family:sans-serif;
+font-weight: 800;
+border-bottom:2px black solid;
+font-size: 0.8em;
+margin-left: 3.95vw;
+padding-top: 2vw;
 
-font-size: 0.7em;
+
+
 
 }
 #name{
-    font-size: 2.3em;
+    font-size: 3vw;
     color:black;
-    font-weight: 500;
+    font-weight: 550;
+padding-right: 0.5vw;
+    border-bottom:2px black solid;
+    width:27vw;
+
 }
+.top2{
+    font-family:sans-serif;
+font-size: 0.7em;
+padding-right: 0.5vw;
+text-decoration: underline;
+
+}
+
 #title1{
 
 
     position: relative;
-    grid-area: 1/1/2/2;
+    grid-area: 2/1/3/2;
 width: 9.5vw;
     /* text-align: start; */
-    border-right:0.5px rgb(189, 189, 189) dashed;
-    border-bottom:0.5px rgb(189, 189, 189) dashed;
+
    display: flex;
 
 align-items: flex-end;
@@ -162,20 +168,22 @@ align-items: flex-end;
 
 }
 .ti{
-   border-top-right-radius:2px ;
-   border-top-left-radius:2px ;
+   /* border-top-right-radius:2px ;
+   border-top-left-radius:2px ; */
     position: relative;
     margin-bottom: -0.1em;
 padding-right: 0.5em;
-background-color: grey;
-color:white;
-font-size: 0.6em;
-font-family:Arial, Helvetica, sans-serif;
+/* background-color:black; */
+border-top:2px black solid;
+color:black;
+font-size: 0.8em;
+/* font-family:Arial, Helvetica, sans-serif; */
 /* width:2vw; */
 /* overflow:visible; */
 /* text-overflow: visible; */
 white-space: nowrap;
 z-index: 1000;
+font-family: 'Permanent Marker', cursive;
 
 }
 /* .box:hover{
@@ -188,32 +196,34 @@ z-index: 1000;
    top: -2em;
   z-index: 20;
    grid-column: 1/8;
-   grid-row: 2/9;
+   grid-row: 3/10;
    width:9.4*6vw;
    background-color: black;
    overflow:scroll;
    z-index: 200;
    cursor:ns-resize;
-   border:2px grey solid;
+   border:2px black solid;
 
 }
 
 .text{
-    grid-row:10/13;
-    border-bottom:0.5px rgb(189, 189, 189) dashed;
+    grid-row:10/14;
+    text-align: start;
+    /* border-bottom:0.5px rgb(189, 189, 189) dashed; */
     grid-column: 1/8;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.2vw;
-    font-weight: 700;
-    padding-left:1em;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 1.8vw;
+    /* font-weight: 600; */
+    margin-left:6px;
     /* margin-top:-1em; */
-    color:purple;
+    color:black;
+    font-family: 'Permanent Marker', cursive;
 }
 
 #tv2{
     z-index: 20;
     grid-column: 1/8;
-    grid-row: 14/18;
+    grid-row: 15/19;
     /* width:450px; */
     /* background-color: white; */
     display:flex;
@@ -222,28 +232,18 @@ z-index: 1000;
     /* scroll-snap-align: start;
     scroll-snap-stop: always; */
     z-index: 20;
-    border:2px grey solid;
+    border:2px black solid;
 }
-.text2{
-    grid-row:19/21;
-    border-bottom:0.5px rgb(189, 189, 189) dashed;
-    grid-column: 1/8;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.2vw;
-    font-weight: 700;
-    padding-left:1em;
-    /* margin-top:-1em; */
-    color:purple;
-}
+
 #title2{
 
 
     position: relative;
-    grid-area: 13/1/14/2;
+    grid-area: 14/1/15/2;
 width: 9.5vw;
     /* text-align: start; */
-    border-right:0.5px rgb(189, 189, 189) dashed;
-    border-bottom:0.5px rgb(189, 189, 189) dashed;
+    /* border-right:0.5px rgb(189, 189, 189) dashed;
+    border-bottom:0.5px rgb(189, 189, 189) dashed; */
    display: flex;
 
 align-items: flex-end;
@@ -262,24 +262,32 @@ align-items: flex-end;
     height:100%;
     margin-right:0.1em;
 }
-.text2{
-    grid-row:19/21;
-    grid-column:1/8;
 
-}
 #title3{
     position: relative;
     grid-area: 22/1/23/2;
     width: 9.5vw;
     /* text-align: start; */
-    border-right:1px rgb(189, 189, 189) dashed;
-    border-bottom:1px rgb(189, 189, 189) dashed;
+
     display: flex;
     align-items: flex-end;
     overflow: visible;
 
 }
+.text2{
+    grid-row:21/23;
+    /* border-bottom:0.5px rgb(189, 189, 189) dashed; */
+    grid-column: 1/6;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding-top:3.3vw;
+    line-height: 1.8vw;
+    font-size: 1.2vw;
+    font-weight: 400;
 
+    margin-left:7px;
+    color:black;
+}
 #tv3{
     position: relative;
     z-index: 1000;
@@ -291,6 +299,7 @@ overflow: scroll;
 border:2px grey solid; */
 display:flex;
 background-color: black;
+border:2px black solid;
 
 }
 
@@ -313,8 +322,8 @@ background-color: black;
  .color{
        /* filter:blur(2px); */
         overflow: hidden;
-        border-right:1px rgb(189, 189, 189) dashed;
-        border-bottom:1px rgb(189, 189, 189) dashed;
+        /* border-right:1px rgb(189, 189, 189) dashed;
+        border-bottom:1px rgb(189, 189, 189) dashed; */
         display: flex;
         align-items: center;
         background-color: none;
@@ -358,17 +367,17 @@ background-color: black;
 }
 .color1{
     position: relative;
-    border:1px rgb(189, 189, 189) dashed;
+    /* border:1px rgb(189, 189, 189) dashed; */
     /* overflow:hidden; */
-    border-bottom:1px rgb(189, 189, 189) dashed;
+    /* border-bottom:1px rgb(189, 189, 189) dashed; */
     /* box-shadow: 1px 2px 2px grey inset;  */
 
 }
 .color2,.color3{
     position: relative;
-    border-right:1px rgb(189, 189, 189) dashed;
+    /* border-right:1px rgb(189, 189, 189) dashed; */
     /* overflow:hidden; */
-    border-bottom:1px rgb(189, 189, 189) dashed;
+    /* border-bottom:1px rgb(189, 189, 189) dashed; */
     font-size: 0.6em;
     /* box-shadow: 1px 2px 2px grey inset;  */
 
@@ -431,6 +440,10 @@ height:100%;
 }
 .color:hover{
  box-shadow: 1px 2px 2px grey inset; 
+
+}
+#color019:hover{
+ box-shadow: none; 
 
 }
 .intro1:hover>p{
@@ -542,7 +555,9 @@ height:100%;
 }
 #color04{
     grid-column: 3/4;
-    grid-row: 2/3;
+    grid-row: 3/4;
+    border-top: 1px black solid;
+    border-right: none;
 }
 #color05{
     grid-column: 2/3;
@@ -568,6 +583,7 @@ height:100%;
 #color010{
     grid-column: 2/3;
     grid-row: 7/8;
+
 }
 #color011{
     grid-column: 3/4;
@@ -587,18 +603,17 @@ height:100%;
 #color013{
     grid-column: 3/4;
     grid-row: 16/17;
-
-    /* border-top: red dashed 1px; */
+    border-top: 1px black solid;
 }
 #color014{
     grid-column: 3/4;
     grid-row: 19/20;
-    /* border-right: red dashed 1px;
-    border-top: red dashed 1px; */
+    border-top: 1px black solid;
 }
 #color015{
     grid-column: 2/3;
     grid-row: 12/13;
+    border-top: 1px black solid;
     /* border-left: red dashed 1px; */
 }
 #color016{
@@ -619,7 +634,7 @@ height:100%;
 #color019{
     grid-column: 3/4;
     grid-row: 23/25;
-  
+
     /* border-left: red dashed 1px;
     border-bottom: red dashed 1px; */
 }
@@ -632,7 +647,7 @@ height:100%;
 #color020{
     grid-column: 3/4;
     grid-row: 12/13;
-    /* border-bottom: red dashed 1px; */
+    border-top: 1px black solid;
 }
 
 #color021{
@@ -756,7 +771,7 @@ margin:0em;
   display: inline;
        /* grid-template-rows:repeat(100, 6.25vw); */
        /* transform: scale(1.5); */
-       background-color: lightgray;
+     
        border:0px;
     }
     .grid{
@@ -770,12 +785,26 @@ margin:0em;
   
     }
     .top{
-        background-color: lightgrey;
+       
         width: 110vw;
        left:-0.05em;
-       line-height: 1.8em;
+       line-height: 1.2em;
        top:0.2em;
-      /* padding-bottom: -0.1em; */
+       display: flex;
+     
+    }
+    .top2{
+font-size: 0.5em;
+padding-top:2vw;
+margin-left: 2em;
+
+    }
+
+    #name{
+        border:none;
+   font-size: 1em;
+   width: 50vw;
+   margin-left: -2em;
     }
     .right{
         display: none;
@@ -827,12 +856,17 @@ margin:0em;
     display:none;
 }
 .text2{
+    width:88.5vw;
     margin-top: 1em;
-   font-size: 0.9em;
+   font-size: 0.8em;
    padding:1em;
+   line-height: 1.2em;
    color:blueviolet;
    height:40vw;
    border:none;
+   margin-left: auto;
+   margin-right: auto;
+
 }
 
  #tv3{
@@ -843,7 +877,7 @@ margin:0em;
         /* overflow: visible; */
         height:160vw;
         /* padding-bottom: 7em; */
-background-color: lightgrey;
+background-color: white;
 overflow-y: hidden;
     }
 
@@ -859,3 +893,10 @@ overflow-y: hidden;
 
 
     }}
+
+    @media screen and (max-width: 900px){
+#color04{
+    grid-row:3/4 ;
+}
+
+    }
