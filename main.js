@@ -22,3 +22,27 @@
 //    document.querySelector(".preview").scrollTop = document.documentElement.scrollHeight;
 // }, 50);
 
+function left(){
+  document.querySelector(".preview0").style.boxShadow = "5px 5px 10px black ";
+  document.querySelector("#tv1").style.boxShadow = "50px 10px 1200px black inset";
+  document.querySelector(".preview").style.opacity = 0.3;
+
+}
+function left2(){
+  document.querySelector(".preview0").style.boxShadow = "none";
+  document.querySelector(".preview").style.opacity = 1;
+
+}
+function right(){
+  document.querySelector(".preview").style.boxShadow = "-5px -5px 10px black ";
+  document.querySelector(".preview0").style.opacity = 0.3;
+  document.querySelector(".top").style.opacity = 0.3;
+  document.querySelector(".preview").style.zIndex = 200;
+
+
+}
+function right2(){
+  document.querySelector(".preview").style.boxShadow = "none";
+  document.querySelector(".preview0").style.opacity = 1;
+  document.querySelector(".top").style.opacity = 1;
+}

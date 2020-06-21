@@ -23,14 +23,14 @@ margin-top: 0.5vw;
 
 .preview0{
     position: relative;
-    right: -0.2em;
+  
      z-index: 100;
        overflow:scroll;
        display:grid;
        height:98vh;
        grid-template-columns: repeat(3,1fr);
        grid-template-rows: repeat(24,6.25vw);
-       box-shadow: 5px 5px 5px black ;
+       box-shadow: 5px 5px 10px black ;
        /* background-color: white; */
        /* border-left:0.5px rgb(189, 189, 189) dashed; */
 }
@@ -100,11 +100,13 @@ height:98vh;
 overflow:hidden;
 border:none;
 }
-
+#project{
+    margin-top: 0.5em;
+}
 .top{
 
   position:fixed;
-  background-color:rgb(240, 240, 240);
+
 display:grid;
 z-index: 2000;
 
@@ -117,7 +119,7 @@ font-family:sans-serif;
 font-weight: 800;
 border-bottom:2px black solid;
 font-size: 0.8em;
-margin-left: 3.95vw;
+margin-left: 1em;
 padding-top: 2vw;
 
 
@@ -238,7 +240,7 @@ height:100%;
 
 #color04{
     grid-column: 3/4;
-    grid-row: 3/4;
+    grid-row: 4/5;
     border-top: 1px black solid;
     border-right: none;
 }
@@ -323,6 +325,9 @@ margin-left: -20em;
         height:100vh;
         width:99vw;
         overflow:hidden;
+    }
+    #project{
+        margin-top: 0;
     }
 
  .preview{
